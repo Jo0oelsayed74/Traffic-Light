@@ -1,0 +1,12 @@
+
+State Machine - |Traffic_Control|state_reg
+Name state_reg.COUNTER_RESET_YELLOW_EAST state_reg.COUNTER_RESET_NORTH state_reg.COUNTER_RESET_EAST state_reg.YELLOW_STATE_EAST state_reg.CAR_EAST state_reg.CAR_NORTH state_reg.YELLOW_STATE_NORTH state_reg.RESET_STATE state_reg.COUNTER_RESET_YELLOW_NORTH 
+state_reg.RESET_STATE 0 0 0 0 0 0 0 0 0 
+state_reg.YELLOW_STATE_NORTH 0 0 0 0 0 0 1 1 0 
+state_reg.CAR_NORTH 0 0 0 0 0 1 0 1 0 
+state_reg.CAR_EAST 0 0 0 0 1 0 0 1 0 
+state_reg.YELLOW_STATE_EAST 0 0 0 1 0 0 0 1 0 
+state_reg.COUNTER_RESET_EAST 0 0 1 0 0 0 0 1 0 
+state_reg.COUNTER_RESET_NORTH 0 1 0 0 0 0 0 1 0 
+state_reg.COUNTER_RESET_YELLOW_EAST 1 0 0 0 0 0 0 1 0 
+state_reg.COUNTER_RESET_YELLOW_NORTH 0 0 0 0 0 0 0 1 1 

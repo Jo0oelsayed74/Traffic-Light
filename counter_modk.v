@@ -1,0 +1,19 @@
+module counter_modk (k,clock,en,reset_n,Q);
+parameter n = 5;  
+input clock, reset_n,en;
+input [3:0] k;
+output [n-1:0] Q;
+reg [n-1:0] Q;
+always @(posedge clock or negedge reset_n)
+	begin
+		if (~reset_n)
+		Q <= k;
+	else if(en) begin
+		Q <=Q - 1'b1;
+		if (Q==-'d1)
+		Q <= k;
+	end
+	else
+		Q<=Q;
+	end
+endmodule
