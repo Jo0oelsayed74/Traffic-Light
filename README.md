@@ -6,4 +6,4 @@ The traffic light controller will have two inputs (car sensors on North and East
  - If cars are only coming in one direction, stay green in that direction.
  - If cars are coming in both directions, cycle through all four states (greenN-redE (30 seconds), yellowN- yellowE (5 seconds), redN-greenE(30 seconds), yellowN-yellowE (5 seconds)).
 
-Used two switches on the FPGA board as the car sensors’ inputs and six LEDs for the traffic lights. and the time counter output in seconds on the seven segment display.
+Used two switches on the FPGA cyclone III board as the car sensors’ inputs and six LEDs for the traffic lights. and the time counter output in seconds on the seven segment display.
